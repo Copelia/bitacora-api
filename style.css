@@ -18,22 +18,17 @@ h3
 
 h4{
     font-family: 'M PLUS 1p', sans-serif;
-    text-align: left;
-    color: #19353a;
-    font-weight: 500;
-    background-color: #e9ecef;
   
-
 }
 
 video{
-    
+  margin: 0 auto;
 }
 
 footer{
     font-family: 'M PLUS 1p', sans-serif;
-    /* text-align: justify; */
     display: float;
     color: #d48fa1;
+    background-color: #e9ecef;
 
 }
