@@ -1,3 +1,5 @@
+
+
 //DnD 
 
 function allowDrop(ev) {
@@ -14,12 +16,24 @@ function allowDrop(ev) {
     ev.target.appendChild(document.getElementById(data));
   }
 
+//Retrieving from local storage
+    let button = document.getElementById('try');
+    let inputValue = document.getElementById('storage');
+    
+    button.addEventListener('click', event => {
+        let storageValue = localStorage.getItem("card");
+        inputValue.innerHTML = storageValue;
+    });
 
+
+  // Trabajando con DOM. Resolver input creado no habilitado 
   let createInput = document.getElementById('newInput');
   let text = document.getElementById('text').value;
-
+  
+  //Setting local storage from input
   const newInput = () => {
-
+    let newValue = document.getElementById('text').value;
+    localStorage.setItem("card", newValue);
     // var x = document.createElement("TEXTAREA");
     // var t = document.createTextNode("What is your main focus today?");
     // x.appendChild(t);
@@ -29,3 +43,4 @@ function allowDrop(ev) {
    <textarea oninput="newInput()" class="form-control" aria-label="With textarea"></textarea>
  </div> `
   }
+
