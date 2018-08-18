@@ -16,7 +16,6 @@
         <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h2 class="display-6">Arca-Api</h2>
-                  <p class="lead">Quae mox ventura</p>
                 </div>
               </div>
     <!-- <header>
@@ -41,15 +40,15 @@
              <div class="row">
               <div class="col-sm clearfix">
                     <div class="card float-left" style="width: 18rem;">
-                            <div class="card-body">
+                            <div class="card-body" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
                               <h5 class="card-title">Curae</h5>
-                              <p class="card-text">Los cuidados son uno de los ocho pilares para dinamizar y trabajar el desempoderamiento (junto con la libertad, la construcción colectiva, la confianza, la autonomía e interdependencia, la alegría, el decrecimiento y la esperanza) <i class="fas fa-cloud"></i></p>
+                              <p class="card-text" id="drag-a" draggable="true" ondragstart="drag(event)"> Los cuidados son uno de los ocho pilares para dinamizar y trabajar el desempoderamiento (junto con la libertad, la construcción colectiva, la confianza, la autonomía e interdependencia, la alegría, el decrecimiento y la esperanza) <i class="fas fa-cloud"></i></p>
                             </div>
                           </div>
                           <div class="card float-right" style="width: 18rem;">
-                            <div class="card-body">
+                            <div class="card-body" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
                               <h5 class="card-title">Drop</h5>
-                              <p class="card-text"></p>
+                              <p class="card-text" id="drag-b" draggable="true" ondragstart="drag(event)"></p>
                             </div>
                           </div>
               </div>
