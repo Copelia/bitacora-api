@@ -16,7 +16,7 @@ function allowDrop(ev) {
     ev.target.appendChild(document.getElementById(data));
   }
 
-//Retrieving from local storage
+//Retrieving from local storage with a button event
     let button = document.getElementById('try');
     let inputValue = document.getElementById('storage');
     
